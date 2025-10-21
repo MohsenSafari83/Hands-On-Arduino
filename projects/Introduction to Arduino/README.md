@@ -93,5 +93,120 @@ Although digital signals may seem simple, they can be extremely powerful. By rap
 > Understanding analog and digital signals is fundamental for controlling sensors, actuators, and building more complex circuits with Arduino.
 
 
+## Sensors & Actuators
+
+When working with Arduino, it is important to understand **sensors** and **actuators**, and the difference between them.
+
+---
 
 
+### What Is a Sensor?
+
+A **sensor** is a component that **senses its environment** and converts a physical parameter into an electronic signal. Examples include:
+
+- Temperature sensors  
+- Light sensors  
+- Simple buttons (when pressed, the signal switches from LOW to HIGH)  
+
+**Analog sensors** provide a range of values, typically **0–5V**, which corresponds to **0–1023** (10-bit resolution) in Arduino programs.  
+
+**Digital sensors** can be more complex, often using **serial communication protocols** to send data in binary sequences (e.g., `101101` → `45`). Many sensors come with **Arduino libraries**, which make reading data as simple as:
+
+```cpp
+sensorValue = sensor.read();
+```
+
+### Actuators
+
+An **actuator** is a component that **changes a physical state** based on electrical signals. Examples include:
+
+- LEDs or lights  
+- Motors  
+- Switches  
+
+Actuators convert electric signals into energy, such as:
+
+- **Radiant energy** (light)  
+- **Mechanical energy** (movement)  
+
+Actuators are typically controlled using Arduino functions:
+
+```cpp
+digitalWrite(LED, HIGH); // turn on an LED
+digitalWrite(LED, LOW);  // turn off an LED
+
+analogWrite(motor, 255); // set motor to maximum speed
+analogWrite(motor, 25);  // set motor to ~10% speed
+```
+![sen](images/maxresdefault.jpg)
+
+---
+### Input & Output
+
+Sensors act as **inputs**, and actuators as **outputs**. Programs often use **conditionals** to decide how to react to sensor data.
+
+**Example:** Using a button to control an LED:
+
+```cpp
+int buttonState = digitalRead(buttonPin);   // read the button state
+
+if(buttonState == HIGH){        // if button is pressed
+    digitalWrite(LED, HIGH);    // turn on LED
+} else {
+    digitalWrite(LED, LOW);     // turn off LED
+}
+```
+---
+### Serial Communication Protocols
+
+Arduino uses **digital signals** to communicate between devices. Common serial protocols include:
+
+- **UART** – For communication between a computer and Arduino (uploading programs, reading data).  
+- **SPI & I²C** – For communication between multiple internal and external components via a **serial bus**.  
+
+**I²C** allows connecting multiple sensors to the same pin, each with a unique address, enabling simultaneous data retrieval.
+
+
+---
+## Arduino API
+
+Visit the [Arduino Language Reference](https://docs.arduino.cc/language-reference/) to explore the full Arduino API.
+
+The Arduino API, also known as the **Arduino Programming Language**, consists of several functions, variables, and structures based on **C/C++**.
+
+---
+
+### Main Parts
+
+The Arduino API can be divided into three main parts:
+
+1. **Functions** – For controlling the Arduino board and performing computations. Examples: reading/writing a digital pin, mapping a value, or using serial communication.  
+2. **Variables** – Arduino constants, data types, and conversions. Examples: `int`, `boolean`, arrays.  
+3. **Structure** – Elements of Arduino (C++) code, such as:  
+   - **Sketch functions**: `setup()`, `loop()`  
+   - **Control structures**: `if`, `else`, `while`, `for`  
+   - **Arithmetic operators**: `+`, `-`, `*`, `/`  
+   - **Comparison operators**: `==` (equal to), `!=` (not equal to), `>` (greater than)
+
+> The Arduino API can be described as a simplification of C++, with many additions for controlling hardware.
+
+---
+
+### Program Structure
+
+The minimum requirement of an Arduino program is the use of two functions: `void setup()` and `void loop()`. The keyword `void` indicates that nothing is returned upon execution.
+
+- **void setup()** – Executes **once** when the Arduino is powered on. Used to define pin modes (input/output), set baud rate for serial communication, or initialize libraries.  
+- **void loop()** – Contains code that runs repeatedly, e.g., turning a lamp on/off based on a sensor or reading a sensor every X seconds.  
+
+Additional functions can be added to organize larger programs.
+
+---
+
+### The "Sketch"
+
+In Arduino, a program is called a **sketch**.  
+
+- Sketch files have a **.ino** extension.  
+- Each sketch is stored in a folder with the same name as the file.  
+- The folder can include additional files, such as header files, which can be included in the sketch.
