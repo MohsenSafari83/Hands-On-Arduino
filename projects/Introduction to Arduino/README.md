@@ -73,7 +73,7 @@ For example, using a **potentiometer** (a variable resistor), we can manually ad
 
 When writing analog signals using **Pulse-Width Modulation (PWM)**, the range is usually **0–255**, which corresponds to 8-bit resolution. PWM allows simulating varying voltage levels even on pins that are digitally controlled.
 
-![analog](analog-signal.png) 
+![analog](images/analog-signal.png) 
 
 ### Digital Signal
 
