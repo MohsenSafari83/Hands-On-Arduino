@@ -210,3 +210,247 @@ In Arduino, a program is called a **sketch**.
 - Sketch files have a **.ino** extension.  
 - Each sketch is stored in a folder with the same name as the file.  
 - The folder can include additional files, such as header files, which can be included in the sketch.
+
+---
+## Quick Reference
+
+This section provides a list of some of the most common elements in the standard Arduino API. It helps you get familiar with key building blocks.  
+
+---
+
+### General
+
+#### `setup()`
+The `setup()` function is where you configure your program.  
+
+```cpp
+void setup() {
+    // program configurations here
+}
+```
+### `loop()`
+
+The `loop()` function contains your main program and runs as long as the board is powered.
+
+```cpp
+void loop() {
+    // main program here
+}
+```
+### `delay()`
+
+Pauses the program for a set number of milliseconds.
+
+*Example: classic LED blink sequence:*
+
+```cpp
+void loop() {
+   digitalWrite(LED, HIGH); // turn on LED
+   delay(1000);              // wait 1 second
+   digitalWrite(LED, LOW);  // turn off LED
+   delay(1000);              // wait 1 second
+}
+```
+> **Note:** The `delay()` function pauses the program, which can block other operations. For simultaneous events, use the `millis()` function.
+
+### `millis()`
+
+The `millis()` function returns the number of milliseconds since the program started. It allows you to manage multiple events simultaneously without pausing the program, which is essential for efficient code.
+
+*Example (Non-blocking timing):*
+
+```cpp
+unsigned long previousMillis_1 = 0; // Store the time for the first event
+unsigned long previousMillis_2 = 0; // Store the time for the second event
+
+const long interval_1 = 1000; // Interval for the first event (1 second)
+const long interval_2 = 2000; // Interval for the second event (2 seconds)
+
+void setup() { 
+  // Initialization code goes here
+}
+
+void loop() {
+    // Get the current time
+    unsigned long currentMillis = millis();
+
+    // Event 1: Checks if 1 second has passed
+    if (currentMillis - previousMillis_1 >= interval_1) {
+        previousMillis_1 = currentMillis; // Update the time of the last execution
+        // execute code every 1 second
+    }
+
+    // Event 2: Checks if 2 seconds have passed
+    if (currentMillis - previousMillis_2 >= interval_2) {
+        previousMillis_2 = currentMillis; // Update the time of the last execution
+        // execute code every 2 seconds
+    }
+}
+```
+## Functions
+
+Custom functions can either execute code or return a value.
+
+### Void Function Example (Does not return a value)
+
+```cpp
+int x;
+
+void loop(){
+    thisFunction(); // execute function
+}
+
+void thisFunction() {
+    x++; // increase x by 1
+}
+```
+### Function Returning a Value (Type `int` Example)
+
+This function executes code and then returns an integer value to the main program.
+
+```cpp
+int value; // Global variable to store the returned value
+
+void setup() { 
+  // Initialization code 
+}
+
+void loop(){
+    // The value returned by returnFunction() is stored in the global 'value' variable.
+    value = returnFunction(); 
+}
+
+int returnFunction() {
+    int returnValue = 5 + 2;
+    return returnValue; // The function sends the calculated value (7) back to loop()
+}
+```
+## Variable Definition
+
+Variables can be created either **globally** or **locally**.
+
+### Global Variable
+
+Defined at the top of the sketch, outside of any functions. Global variables can be accessed from anywhere in your code.
+
+```cpp
+int sensorReading = x; // global
+```
+### Local Variable
+
+A local variable is defined inside a function, such as `loop()` or `setup()`. Local variables only exist and can be accessed within that specific function, and they are destroyed when the function finishes running.
+
+```cpp
+void loop() {
+    int sensorReading = x; // local variable
+}
+```
+## Data Types
+
+Below are some of the most common data types available in the Arduino programming language (based on C++):
+
+* `bool`
+* `byte`
+* `char`
+* `double`
+* `float`
+* `int`
+* `long`
+* `short`
+* `String`
+
+### Examples:
+
+```cpp
+int exampleNumber = 25;         // integer (stores whole numbers)
+float exampleNumber = 22.2123;  // floating point (stores numbers with decimals)
+String exampleSentence = "Hello"; // string (stores text)
+bool exampleSwitch = true;       // boolean (stores true or false)
+```
+## Serial Communication
+
+Serial communication is **essential** for debugging and interaction, as it provides the easiest way to monitor what is happening on your Arduino board.
+
+### `Serial.begin(baudRate)`
+
+This command initializes serial communication between the Arduino board and the computer. It is defined inside the `void setup()` function, where you specify the **baud rate** (the speed of communication).
+
+```cpp
+void setup() {
+    Serial.begin(9600); // Initializes communication at 9600 bits per second
+}
+```
+### `Serial.print()` / `Serial.println()`
+
+These commands print data to the serial port, which can be viewed in the Arduino IDE **Serial Monitor** tool. `Serial.println()` adds a new line after printing, while `Serial.print()` does not.
+
+```cpp
+void loop() {
+    Serial.print("Hello"); // Prints "Hello" without a new line
+}
+```
+### `Serial.read()`
+
+This command reads the incoming serial data that is being sent from the computer (e.g., from the Serial Monitor input field) to the Arduino. It returns the first byte of incoming data, or $-1$ if no data is available.
+
+```cpp
+void loop() {
+    int incomingByte = Serial.read(); // Reads the incoming byte and stores it in the 'incomingByte' variable
+}
+```
+## GPIO / Pin Management
+
+### `pinMode()`
+
+The `pinMode()` function is used to configure a digital pin to behave as an **input**, **output**, or **input with the internal pull-up resistor enabled**. This must be configured inside the `void setup()` function.
+
+```cpp
+pinMode(pin, INPUT);        // Configures the pin to receive a signal (e.g., from a button or sensor)
+pinMode(pin, OUTPUT);       // Configures the pin to send a signal (e.g., to an LED or motor)
+pinMode(pin, INPUT_PULLUP); // Configures the pin as an input and enables a weak internal pull-up resistor
+```
+
+### `digitalRead()`
+Read the state of a digital pin.
+
+```cpp
+Copy code
+int state = digitalRead(pin);
+```
+### `digitalWrite()`
+
+Set a digital pin HIGH or LOW.
+```cpp
+digitalWrite(pin, HIGH);
+digitalWrite(pin, LOW);
+```
+### `analogRead()`
+
+Read an analog pin (0–1023).
+```cpp
+int sensorValue = analogRead(A1);
+```
+### `analogWrite()` (PWM)
+
+This command writes a value between **0 and 255** (an 8-bit resolution) to a $\text{PWM}$-capable pin (marked with a $\sim$ symbol). It's used to:
+* **Dim lights** ($\text{LED}$s).
+* **Set the speed** of a DC motor.
+
+This function creates a *simulated* analog voltage by using **Pulse Width Modulation ($\text{PWM}$)**.
+
+```cpp
+analogWrite(pin, value); // 'value' is an integer between 0 (off) and 255 (full on)
+```
+##  Resources and References
+
+Here are some helpful external resources for learning more about Arduino programming and electronics:
+
+### Official Arduino Documentation
+* [Arduino Official Documentation](https://docs.arduino.cc/)
+* [Getting Started with Arduino API](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/#arduino-api)
+* [Arduino Language Reference (API)](https://docs.arduino.cc/language-reference/)
+
+### Hardware and Concepts
+* [All You Need to Know About Arduino UNO Board Hardware](https://circuitdigest.com/article/everything-you-need-to-know-about-arduino-uno-board-hardware)
+* [How to Use a Breadboard for Beginners](https://www.elecrow.com/blog/how-to-use-a-breadboard-for-beginners.html?srsltid=AfmBOopgmiBQiVN7Ps07vZ5MGxU3g0BGtnCWnXt8xZVF1Wpt6bfryQ9e)
+
