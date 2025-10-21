@@ -48,7 +48,7 @@ This mini-project simulates how a real traffic light operates:
 5. Observe the LEDs cycling like a real traffic light! 
 ---
 ## Preview
-! [light](images/traf.jpg)
+![light](images/traf.jpg)
 
 
 
