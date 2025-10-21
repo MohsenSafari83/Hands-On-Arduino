@@ -1,3 +1,4 @@
+![dghd](images/Arduino-Uno-Pinout-And-Specs.jpg)
 #  Introduction to Arduino
 
 Welcome to **Introduction to Arduino** — a beginner-friendly overview of the Arduino platform.  
