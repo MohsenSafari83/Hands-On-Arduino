@@ -6,7 +6,7 @@ Together, they form a foundation for learning how Arduino interacts with the phy
 
 ---
 
-## 🎯 Project Goals
+##  Project Goals
 
 The purpose of these three projects is to:
 - Understand how Arduino reads **analog sensor data** (temperature sensor)
@@ -38,7 +38,7 @@ A jumper wire connects each pin properly to the Arduino board and breadboard.
 - How to use `analogRead()` and convert voltage to real-world units  
 - How to send sensor data to the computer using `Serial.println()`
 
-![temp](images/)
+![temp](images/temp.png)
 
 ---
 
@@ -65,9 +65,11 @@ If you use a breadboard, make sure the longer leg of the buzzer (positive) goes 
 - How timing and rhythm are controlled using code  
 - How musical notes correspond to electronic signal frequencies
 
+![buz](images/buzzer.png)
+
 ---
 
-## 💡 Project 3 — LED Fading with PWM and Oscilloscope
+## Project 3 — LED Fading with PWM and Oscilloscope
 
 ### Description
 This project gradually increases and decreases the brightness of an LED using **Pulse Width Modulation (PWM)**.  
@@ -88,19 +90,11 @@ As the duty cycle decreases, the LED appears dimmer.
 - How PWM simulates analog voltage using digital output  
 - How LED brightness is controlled smoothly through software  
 - How to visualize PWM signals on an oscilloscope  
-
+![k;ljdaf](images/osi/png)
 ---
 
-## 🧩 Tools & Environment
 
-- **Software:** Arduino IDE or Tinkercad Circuits  
-- **Board:** Arduino Uno R3  
-- **Language:** C/C++ (Arduino)  
-- **Simulation Tool:** Optional oscilloscope for waveform observation  
-
----
-
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 By completing these projects, you will:
 - Gain confidence in wiring and debugging breadboard circuits  
@@ -110,7 +104,7 @@ By completing these projects, you will:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Open each project’s `.ino` file in the **Arduino IDE**  
 2. Select your **board type** (Arduino Uno) and correct **COM port**  
@@ -119,18 +113,4 @@ By completing these projects, you will:
    - Serial Monitor for temperature readings  
    - Buzzer playing melody  
    - LED brightness changing (and PWM waveform on oscilloscope)
-
----
-
-## 📸 Circuit Diagrams
-
-Each project can be built easily on a **breadboard** using jumper wires and basic components.  
-They can also be simulated in **Tinkercad Circuits** before uploading to physical hardware.
-
----
-
-## 🧾 License
-
-This project is open-source under the **MIT License**.  
-You are free to use, modify, and share these examples for learning and educational purposes.
 
