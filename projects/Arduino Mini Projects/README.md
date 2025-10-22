@@ -90,7 +90,7 @@ As the duty cycle decreases, the LED appears dimmer.
 - How PWM simulates analog voltage using digital output  
 - How LED brightness is controlled smoothly through software  
 - How to visualize PWM signals on an oscilloscope  
-![k;ljdaf](images/osi/png)
+![k;ljdaf](images/osi.png)
 ---
 
 
