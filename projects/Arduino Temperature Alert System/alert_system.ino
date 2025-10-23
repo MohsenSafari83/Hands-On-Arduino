@@ -2,7 +2,7 @@
 // This project reads temperature from an LM35 sensor, lights LEDs based on
 // the temperature range, and activates a buzzer if temperature exceeds 40°C.
 
-#define LM35_PIN A0
+#define LM35_PIN A5
 #define LED_RED 2
 #define LED_YELLOW 4
 #define LED_BLUE 7
