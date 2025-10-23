@@ -1,4 +1,4 @@
-![kl;](images/alar.png)
+![kl;](images/alart.png)
 
 # Arduino Temperature Alert System with LM35 & LED & Buzzer
 
@@ -29,10 +29,10 @@ Temperature (°C) = Voltage * 100             // for LM35
 
 | Component                           | Pin          | Description                               |
 | :---------------------------------- | :----------- | :---------------------------------------- |
-| **Temperature Sensor (TMP36/LM35)** | A0 (Analog)  | Read analog temperature value             |
+| **Temperature Sensor (TMP36/LM35)** | A5 (Analog)  | Read analog temperature value             |
 | **Red LED**                         | D2 (Digital) | Digital output for high temperature alert |
-| **Yellow LED**                      | D3 (Digital) | Digital output for medium temperature     |
-| **Blue LED**                        | D4 (Digital) | Digital output for normal temperature     |
+| **Yellow LED**                      | D4 (Digital) | Digital output for medium temperature     |
+| **Blue LED**                        | D7 (Digital) | Digital output for normal temperature     |
 | **Piezo Buzzer**                    | D5 (Digital) | Digital output for auditory alert         |
 | **All components**                  | GND          | Common ground                             |
 
@@ -42,8 +42,8 @@ Temperature (°C) = Voltage * 100             // for LM35
 | :--------- | :-- | :------------------------------ | :---------------------------------------- |
 | U4         | 1   | Arduino Uno R3                  | Main microcontroller board                |
 | D2         | 1   | Red LED                         | Visual indicator for high temperature     |
-| D3         | 1   | Yellow LED                      | Visual indicator for medium temperature   |
-| D4         | 1   | Blue LED                        | Visual indicator for normal temperature   |
+| D4         | 1   | Yellow LED                      | Visual indicator for medium temperature   |
+| D7        | 1   | Blue LED                        | Visual indicator for normal temperature   |
 | R2, R3, R4 | 3   | 220 Ω Resistors                 | Current-limiting resistors for LEDs       |
 | U5         | 1   | Temperature Sensor [TMP36/LM35] | Analog sensor for temperature measurement |
 | PIEZO2     | 1   | Piezo Buzzer                    | Auditory alert                            |
@@ -60,12 +60,18 @@ The reasons are:
 
 However, the DHT11 sensor was not used in this project because it is **not available in the Tinkercad simulation environment**. Therefore, LM35/TMP36 was chosen as a suitable alternative for demonstrating temperature monitoring.
 
-## Usage Instructions
+## Temperature Sensors
 
-1. Connect all components according to the hardware connection table.
-2. Upload your Arduino code to the board.
-3. Open Serial Monitor (baud rate: 9600) to see real-time temperature and status.
-4. Observe the LEDs and buzzer activating based on temperature levels.
+### LM35 / TMP36
+This is how the LM35/TMP36 sensor looks:
+
+![LM35 Sensor](images/lm35.png)
+
+### DHT11
+This is how the DHT11 temperature and humidity sensor looks:
+
+![DHT11 Sensor](images/dht11.jpg)
+
 
 ## Notes
 
@@ -73,5 +79,3 @@ However, the DHT11 sensor was not used in this project because it is **not avail
 * Ensure current-limiting resistors are used with LEDs.
 * The project works with both TMP36 and LM35; modify the conversion formula accordingly.
 
-
-**License:** MIT
