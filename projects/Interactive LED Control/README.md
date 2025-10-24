@@ -1,3 +1,5 @@
+![ajsdf](images/Interactive-LED-Control.png)
+
 # Arduino Interactive LED Control Project
 
 ## Project Goal
@@ -7,10 +9,13 @@ In essence, it's a combined digital and analog control system that involves user
 
 ## Project Components
 
+
 ### Red and Yellow LEDs (Digital Output)
 * Can be turned ON or OFF.
 * Their status is controlled by the user via the Serial Monitor using `led red on/off` and `led yellow on/off` commands.
 * The push button can also toggle (ON ↔ OFF) the state of both the red and yellow LEDs.
+
+![command](images/command.png)
 
 ### Green LED (PWM / Analog Output)
 * The brightness of the green LED is controlled using Pulse Width Modulation (PWM).
