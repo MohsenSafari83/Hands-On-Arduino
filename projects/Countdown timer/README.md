@@ -7,6 +7,33 @@ This project demonstrates how to control a **7-segment display** using an **Ardu
 The goal is to display numeric digits (0–9) by turning ON/OFF the individual LED segments inside the module.
 
 ---
+##  Components Used
+
+| Component | Quantity | Notes |
+|----------|----------|------|
+| Arduino Uno R3 | 1 | Main controller |
+| 7-Segment Display (Common Cathode) | 1 | Single-digit module |
+| 220Ω Resistors | 7–8 | One per segment (including DP if used) |
+| Jumper Wires | Several | Connections |
+| Breadboard | 1 | Circuit assembly | 
+
+---
+
+## Wiring (Common Cathode)
+
+| Segment | Arduino Pin |
+|--------|-------------|
+| A | D5 |
+| B | D4 |
+| C | D10 |
+| D | D11 |
+| E | D12 |
+| F | D6 |
+| G | D8 |
+| DP | D9 (not used) |
+| COM pins | GND |
+
+---
 
 ##  What is a 7-Segment Display?
 A 7-segment display is an electronic display device commonly used to show numeric characters.  
