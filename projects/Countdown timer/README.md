@@ -13,7 +13,7 @@ The goal is to display numeric digits (0–9) by turning ON/OFF the individual L
 |----------|----------|------|
 | Arduino Uno R3 | 1 | Main controller |
 | 7-Segment Display (Common Cathode) | 1 | Single-digit module |
-| 220Ω Resistors | 7–8 | One per segment (including DP if used) |
+| 500 Ω Resistors | 8 | One per segment (including DP if used) |
 | Jumper Wires | Several | Connections |
 | Breadboard | 1 | Circuit assembly | 
 
