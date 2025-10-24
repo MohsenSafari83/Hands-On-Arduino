@@ -15,8 +15,6 @@ In essence, it's a combined digital and analog control system that involves user
 * Their status is controlled by the user via the Serial Monitor using `led red on/off` and `led yellow on/off` commands.
 * The push button can also toggle (ON ↔ OFF) the state of both the red and yellow LEDs.
 
-![command](images/command.png)
-
 ### Green LED (PWM / Analog Output)
 * The brightness of the green LED is controlled using Pulse Width Modulation (PWM).
 * The user can directly set the brightness with the command `led green brightness:<0-255>`.
@@ -34,6 +32,8 @@ In essence, it's a combined digital and analog control system that involves user
 * The user enters commands here.
 * The Arduino reads the full command using `Serial.readString()` and acts accordingly.
 * `Serial.print()` and `Serial.println()` are used to display information, LED states, or potentiometer readings.
+
+![command](images/command.png)
 
 ## Code Logic Breakdown
 
