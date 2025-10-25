@@ -44,6 +44,7 @@ A 7-segment display is an electronic display device commonly used to show numeri
 
 Different combinations of ON/OFF segments form different digits.
 To light up the display, you can control each segment individually by setting its pin to HIGH or LOW, just like you would with any regular LED.
+
 Example:  
 - Number **1** → only segments **B** and **C** turn ON  
 - Number **8** → all segments turn ON
