@@ -37,11 +37,13 @@ The goal is to display numeric digits (0–9) by turning ON/OFF the individual L
 
 ##  What is a 7-Segment Display?
 A 7-segment display is an electronic display device commonly used to show numeric characters.  
-It consists of **7 LEDs** shaped like line segments to form numbers, plus an optional **Decimal Point (DP)**.
+- it is made up of seven separate LEDs arranged in the shape of the number “8.”
+- Each of these LEDs is called a segment.(Each LED segment is labeled: A, B, C, D, E, F, G.)
+- It consists of **7 LEDs** shaped like line segments to form numbers, plus an optional **Decimal Point (DP)**.
+- Each segment has two electrical connection points, just like any regular LED.
 
-Each LED segment is labeled: A, B, C, D, E, F, G.  
 Different combinations of ON/OFF segments form different digits.
-
+To light up the display, you can control each segment individually by setting its pin to HIGH or LOW, just like you would with any regular LED.
 Example:  
 - Number **1** → only segments **B** and **C** turn ON  
 - Number **8** → all segments turn ON
