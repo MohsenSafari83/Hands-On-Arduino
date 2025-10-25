@@ -109,3 +109,57 @@ Build a digital countdown timer that:
 - Display **minutes:seconds (MM:SS)** on the 7-segment display for better readability  
 - Create a visually appealing LED + buzzer alarm pattern using PWM and `tone()`  
 - Add **EEPROM storage** to save default timer value across power cycles
+
+# HT16K33 7-Segment Display Tutorial
+
+![;jsf](images/ht16k33.jpeg)
+
+The **HT16K33** is an LED driver module designed to control 7-segment displays using the **I2C protocol**.  
+It allows you to control a 4-digit 7-segment display using only two wires (SDA and SCL), eliminating complex wiring.  
+This makes it ideal for projects that display numbers such as timers, clocks, and counters.
+
+---
+
+## Specifications
+
+- **Number of digits:** 4  
+- **Display type:** 7-segment with decimal point support  
+- **Communication interface:** I2C (SDA, SCL)  
+- **Operating voltage:** 5V DC  
+- **Default I2C address:** 0x70 (can be changed)  
+- **Supports:** Numeric digits and some English letters  
+
+---
+
+## Wiring with Arduino
+
+### Connections
+
+![j;klsf](images/ht-overview.jpeg)
+
+| Arduino Pin | HT16K33 Pin |
+|-------------|-------------|
+| 5V          | VCC         |
+| GND         | GND         |
+| A4          | SDA         |
+| A5          | SCL         |
+
+### Installing Libraries
+
+1. Open **Arduino IDE**  
+2. Go to **Sketch > Include Library > Manage Libraries**  
+3. Search for `Adafruit LED Backpack` and install it  
+4. Install the dependency library `Adafruit GFX` as well  
+
+## Important Notes
+
+- **I2C Address:** When using multiple HT16K33 modules, you may need to change the I2C address using jumpers or software.  
+- **Display Type:** Most HT16K33 modules are **common cathode**. Make sure your display is compatible.  
+- **Alternative Libraries:** Besides Adafruit, libraries like [`RobTillaart/HT16K33`](https://github.com/RobTillaart/HT16K33) exist and may offer additional features.
+
+---
+
+## Additional Resources
+
+- [RoboJax HT16K33 Tutorial](https://robojax.com/tutorial_view.php?id=364)  
+- [HT16K33 GitHub Repository](https://github.com/RobTillaart/HT16K33)
