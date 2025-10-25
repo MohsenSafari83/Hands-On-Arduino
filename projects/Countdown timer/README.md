@@ -1,6 +1,6 @@
 # Wiring Common Cathode Seven Segment Display to Arduino UNO
 
-![aaa](images/Wiring_Common.png)
+![aaa](images/)
 
 ##  Project Overview
 This project demonstrates how to control a **7-segment display** using an **Arduino Uno** in **Tinkercad**.  
