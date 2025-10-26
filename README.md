@@ -42,8 +42,8 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 ## 🌳 Project Tree Overview
 ```
 Hands-On-Arduino
-└── projects
-├── Introduction to Arduino
+projects
+└── Introduction to Arduino
 ├── Arduino Mini Projects
 ├── Interactive LED Control
 ├── Arduino Temperature Alert System
