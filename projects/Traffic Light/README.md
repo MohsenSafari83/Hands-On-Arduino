@@ -1,3 +1,6 @@
+## Preview
+![light](images/traf.jpg)
+
 # 🚦Arduino Traffic Light Project
 
 A simple **traffic light simulation** built using an **Arduino Uno** and three LEDs (red, yellow, green).  
@@ -46,9 +49,6 @@ This mini-project simulates how a real traffic light operates:
 3. Upload the provided code to your Arduino Uno.
 4. Start the simulation (in Tinkercad) or power your Arduino via USB.
 5. Observe the LEDs cycling like a real traffic light! 
----
-## Preview
-![light](images/traf.jpg)
 
 
 
