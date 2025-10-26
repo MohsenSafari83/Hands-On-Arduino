@@ -1,4 +1,4 @@
-# Wiring Common Cathode Seven Segment Display to Arduino UNO
+# Wiring Common Cathode  4-Digit 7-Segment Display with Arduino UNO
 
 ![aaa](images/alarm.png)
 
