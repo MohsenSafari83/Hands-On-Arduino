@@ -2,7 +2,7 @@
 ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Tinkercad](https://img.shields.io/badge/Tinkercad-FF6F00?style=for-the-badge&logo=autodesk&logoColor=white)
 
-# Hands-On Arduino
+# Hands-On in Arduino
 
 Welcome to my **Arduino Projects Repository**.  
 This repository documents my practical journey in embedded systems using Arduino.  
