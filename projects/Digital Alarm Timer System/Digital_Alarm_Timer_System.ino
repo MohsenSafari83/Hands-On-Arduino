@@ -19,7 +19,7 @@ const int LED_PIN = 6;
 const int BUTTON_STOP = 3;   // Stop alarm button
 
 // Timer settings
-int timerValue = 2;          // Default countdown (seconds)
+int timerValue = 30;          // Default countdown (seconds)
 bool alarmActive = false;
 
 // Time tracking
