@@ -31,11 +31,13 @@ Photodiodes are used in a wide range of optoelectronic systems including:
 - Security laser alarms
 
 > this is what look like a Photodiode
+
 !['kl](images/pin-photo-diode.jpg)
 
 ## Photodiode Light Sensor Output
 
 The image below shows the **real output of the Arduino + Photodiode + Op-Amp circuit**.  
+
 ![Photodiode Output](images/output.png)
 
 **Notes:**
@@ -51,6 +53,29 @@ The image below shows the **real output of the Arduino + Photodiode + Op-Amp cir
 | R1   | 1        | 10 kΩ Resistor |
 | C1   | 1        | 100 nF Capacitor |
 
+---
+## Circuit Connections
+
+- **Photodiode:**
+  - Negative pin → Op-Amp **IN−**
+  - Positive pin → Op-Amp **IN+** (connected to GND)
+  
+- **Feedback Network:**
+  - Resistor between **IN−** and **OUT** (Rf)
+  - 100 nF capacitor in parallel with the resistor for stability and noise reduction
+
+- **Op-Amp Power Supply:**
+  - VCC+ → +5 V
+  - VCC− → GND
+
+- **Arduino Connection:**
+  - Op-Amp **OUT** → Arduino **Analog Pin A0**
+
+**Notes:**
+- Ensure the Op-Amp output remains within 0–5V to protect the Arduino ADC.
+- If the output can go negative, consider using a **virtual ground** or a **level-shifting circuit**.
+- Choose an appropriate feedback resistor (Rf) to scale the photocurrent into a measurable voltage.
+- Use short wires and proper grounding to minimize measurement noise.
 ---
 | Component | Datasheet |
 |-----------|-----------|
