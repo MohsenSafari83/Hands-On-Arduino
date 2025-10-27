@@ -1,5 +1,5 @@
-
-![](images/)
+# Arduino Photodiode + Op-Amp Light Sensor Circuit
+![Circuit Diagram](images/wiring.png)
 
 # Arduino Photodiode Light Sensor System
 
@@ -32,4 +32,30 @@ Photodiodes are used in a wide range of optoelectronic systems including:
 
 > this is what look like a Photodiode
 !['kl](images/pin-photo-diode.jpg)
+
+## Photodiode Light Sensor Output
+
+The image below shows the **real output of the Arduino + Photodiode + Op-Amp circuit**.  
+![Photodiode Output](images/output.png)
+
+**Notes:**
+- The voltage and current vary according to the light intensity falling on the photodiode.
+- This visualization helps in verifying the circuit operation and calibrating the feedback resistor for desired sensitivity.
+## Bill of Materials (BOM)
+
+| Name | Quantity | Component |
+|------|----------|-----------|
+| U1   | 1        | Arduino Uno R3 |
+| U2   | 1        | Photodiode (BPW34) |
+| U3   | 1        | 741 Operational Amplifier |
+| R1   | 1        | 10 kΩ Resistor |
+| C1   | 1        | 100 nF Capacitor |
+
+---
+| Component | Datasheet |
+|-----------|-----------|
+| Photodiode (BPW34) | [Datasheet](https://www.vishay.com/docs/81584/bpw34.pdf) |
+| 741 Op-Amp | [Datasheet](https://www.ti.com/lit/ds/symlink/ua741.pdf) |
+
+
 
