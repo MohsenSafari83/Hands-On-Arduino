@@ -23,5 +23,6 @@
    Simulation of traffic light timing and logic using LEDs.
 
 9. [**Arduino Photodiode + Op-Amp Light Sensor**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode)
-    Developed Arduino + Photodiode + Op-Amp light sensor project
+   
+     Developed Arduino + Photodiode + Op-Amp light sensor project
 
