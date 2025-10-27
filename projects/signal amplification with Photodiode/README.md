@@ -82,5 +82,10 @@ The image below shows the **real output of the Arduino + Photodiode + Op-Amp cir
 | Photodiode (BPW34) | [Datasheet](https://www.vishay.com/docs/81584/bpw34.pdf) |
 | 741 Op-Amp | [Datasheet](https://www.ti.com/lit/ds/symlink/ua741.pdf) |
 
+##  References
+
+1. [Arduino Photodiode Light Sensor (BPW34) Circuit & Code Example – DeepBlue Embedded](https://deepbluembedded.com/arduino-photodiode-light-sensor-bpw34-circuit-code-example/)
+2. [Light Sensor including Photocell and LDR Sensor – Electronics Tutorials](https://www.electronics-tutorials.ws/io/io_4.html)
+
 
 
