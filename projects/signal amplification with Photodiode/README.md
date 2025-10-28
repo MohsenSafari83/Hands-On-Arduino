@@ -83,6 +83,7 @@ The image below shows the **real output of the Arduino + Photodiode + Op-Amp cir
 
 1. [Arduino Photodiode Light Sensor (BPW34) Circuit & Code Example – DeepBlue Embedded](https://deepbluembedded.com/arduino-photodiode-light-sensor-bpw34-circuit-code-example/)
 2. [Light Sensor including Photocell and LDR Sensor – Electronics Tutorials](https://www.electronics-tutorials.ws/io/io_4.html)
+3. [Using Op Amps to measure signals with an Arduino](https://forum.arduino.cc/t/using-operational-amplifiers-in-your-arduino-project/692648)
 
 
 
