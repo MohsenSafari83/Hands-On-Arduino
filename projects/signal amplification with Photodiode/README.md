@@ -40,9 +40,6 @@ The image below shows the **real output of the Arduino + Photodiode + Op-Amp cir
 
 ![Photodiode Output](images/output.png)
 
-**Notes:**
-- The voltage and current vary according to the light intensity falling on the photodiode.
-- This visualization helps in verifying the circuit operation and calibrating the feedback resistor for desired sensitivity.
 ## Bill of Materials (BOM)
 
 | Name | Quantity | Component |
