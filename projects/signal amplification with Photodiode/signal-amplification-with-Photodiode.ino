@@ -5,7 +5,7 @@
 
 // Pin and Circuit Definitions 
 // Analog input pin connected to the Op-Amp output
-const int sensorPin = A0;
+const int sensor_Pin = A0;
 
 // Arduino ADC reference voltage (typically 5V for most boards)
 const float Vref = 5.0;
@@ -22,11 +22,11 @@ void setup() {
 
 void loop() {
   // Step 1: Read raw ADC value from A0 (range 0 - 1023 for 10-bit ADC)
-  int rawADC = analogRead(sensorPin);  
+  int raw_ADC = analogRead(sensor_Pin);  
 
   // Step 2: Convert raw ADC value to voltage
   // Formula: V = (ADC_value / ADC_max) * Vref
-  float voltage = (rawADC * Vref) / 1023.0;
+  float voltage = (raw_ADC * Vref) / 1023.0;
 
   // Step 3: Convert voltage to photocurrent using the TIA resistor
   // Formula: Iph = Vout / Rf
@@ -35,7 +35,7 @@ void loop() {
   // Output
   // Print raw ADC value
   Serial.print("ADC: ");
-  Serial.print(rawADC);
+  Serial.print(raw_ADC);
   
   // Print converted voltage
   Serial.print(" | Voltage: ");
