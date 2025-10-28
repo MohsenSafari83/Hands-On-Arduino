@@ -13,7 +13,7 @@ In this project, we will be using the **BPW34 Photodiode** with an **Op-Amp cond
 This project demonstrates:
 
 - Using the **BPW34 Photodiode** in a **transimpedance amplifier (Op-Amp) circuit**
-- Amplifying its response for **Arduino ADC measurement**
+- Amplifying its response for **Arduino ADC(Analog to Digital Conversion) measurement**
 - Creating a functional and precise **light-intensity sensor**
 
 The result provides a strong foundation for more advanced applications such as optical communication or directional light tracking.
