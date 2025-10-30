@@ -56,7 +56,7 @@ To use the Wire library again after this, call Wire.begin() again.
 
 This function can be helpful if you want to switch the I2C operation mode from master to slave (or vice versa) during runtime without restarting the whole microcontroller.
 This may be a rare condition, but it’s doable.
-# 🖥️ Arduino I2C LCD Interfacing
+# Arduino I2C LCD Interfacing
 
 Now, let’s move to interfacing the **I2C LCD 16×2 display** with Arduino.  
 We’ll cover the **pinout**, **wiring diagram**, **LCD contrast control**, and the **I2C LCD device address**.
