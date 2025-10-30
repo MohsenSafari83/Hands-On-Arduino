@@ -173,7 +173,7 @@ Hobby servo motors are controlled using **Pulse Width Modulation (PWM)**:
 >  For example, a pulse of ~1 ms may move the servo to 0°, ~1.5 ms to 90°, and ~2 ms to 180°.
 
 ---
-## 📊 Servo Motor Summary Table
+##  Servo Motor Summary Table
 
 | Feature / Concept          | Details / Value |
 |----------------------------|----------------|
