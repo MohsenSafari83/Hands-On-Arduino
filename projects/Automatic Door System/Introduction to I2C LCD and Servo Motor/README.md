@@ -116,5 +116,94 @@ void loop() {
 | Display Text              | MyLCD.print("Your Text") |
 | Advantages of I2C LCD     | Fewer wires, multiple modules on one bus, saves Arduino pins |
 
+# Servo Motor
+
+A **servo motor** is an electric device used to control **angular rotation**.  
+It can be a **rotary actuator** or a **linear actuator**. Servo motors have a **servomechanism** that helps control and monitor the motion of the motor.  
+Users can precisely control the **rotation speed** and **position (angle)**.
+
+---
+
+## Servo Motor Pins
+
+A typical servo motor has **3 pins**:
+
+| Pin    | Description         |
+|--------|-------------------|
+| VCC    | 5 Volts Power Supply |
+| GND    | Ground            |
+| Signal | Control Input Signal |
+
+---
+
+##  Servo Motor Configuration
+
+1. Connect the **Signal pin** of the servo motor to a vacant **PWM pin** of the Arduino.  
+2. Connect the **VCC** of the servo motor to the **5V pin** on Arduino.  
+3. Connect the **GND** of the servo motor to Arduino **GND**.  
+4. Import the **Servo library** in your Arduino code.  
+5. Compile and upload the code to the Arduino Uno R3.
+
+---
+
+##  What Makes a Servo Precise?
+
+Inside a typical hobby servo motor, there are **five main components**:
+
+| Component      | Function |
+|----------------|---------|
+| **DC Motor**   | Provides the rotational force; connects to output shaft through gears. |
+| **Gearbox**    | Increases torque and improves precision; reduces speed but strengthens rotation. |
+| **Servo Horn** | Plastic arm attached to the output shaft; used to attach objects to move. |
+| **Potentiometer** | Variable resistor that acts as a position sensor; connected to output shaft to detect rotation. |
+| **Control Unit**  | Receives signals from Arduino, reads potentiometer, and controls the DC motor. |
+
+![Servo Motor Internal Structure](images/Servo-Motor-Internal-Structure-Illustration.png)
+
+---
+
+##  How Servo Motors Work
+
+Hobby servo motors are controlled using **Pulse Width Modulation (PWM)**:
+
+- Pulses are sent at regular intervals, typically **50 times per second (50 Hz)** → one pulse every **20 ms**.  
+- **Pulse width** (duration of the pulse) determines the servo’s position.  
+- The control unit reads the pulse width and moves the motor shaft to the corresponding angle.
+
+>  For example, a pulse of ~1 ms may move the servo to 0°, ~1.5 ms to 90°, and ~2 ms to 180°.
+
+---
+## 📊 Servo Motor Summary Table
+
+| Feature / Concept          | Details / Value |
+|----------------------------|----------------|
+| Device Type                | Servo Motor (Rotary / Linear Actuator) |
+| Control Method             | PWM (Pulse Width Modulation) |
+| PWM Frequency              | 50 Hz (20 ms per pulse) |
+| Pins                       | VCC (5V), GND, Signal (PWM input) |
+| Arduino Connection         | Signal → PWM Pin, VCC → 5V, GND → GND |
+| Main Components            | DC Motor, Gearbox, Servo Horn, Potentiometer, Control Unit |
+| Position Control           | Pulse width (1–2 ms) |
+| Rotation Angle Range       | Typically 0°–180° |
+| Precision                  | High, due to potentiometer feedback and gearbox |
+| Arduino Library            | Servo.h |
+| Example Command            | `myservo.write(angle);` |
+| Typical Applications       | Robotic arms, automatic doors, model planes, pan-tilt cameras |
+
+##  References / Sources
+
+### I2C LCD
+1. [Arduino I2C Tutorial & Examples – DeepBlu Embedded](https://deepbluembedded.com/arduino-i2c-tutorial-examples/)  
+2. [Arduino I2C LCD – DeepBlu Embedded](https://deepbluembedded.com/arduino-i2c-lcd/#arduino-i2c-lcd)  
+3. [Arduino Serial Communication – DeepBlu Embedded](https://deepbluembedded.com/arduino-serial-communication/)
+
+### Servo Motor
+1. [Servo Motor Interfacing and Control using Arduino – GeeksforGeeks](https://www.geeksforgeeks.org/electronics-engineering/servo-motor-interfacing-and-control-using-arduino/)  
+2. [Servo Motor Arduino Tutorial – Last Minute Engineers](https://lastminuteengineers.com/servo-motor-arduino-tutorial/)  
+3. [Arduino Servo Motors – Instructables](https://www.instructables.com/Arduino-Servo-Motors/)
+
+
+
+
 
 
