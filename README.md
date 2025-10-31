@@ -26,19 +26,25 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 
 ---
 
-##  Arduino Projects Portfolio Roadmap
+##  Arduino Projects Portfolio Roadmap (Sorted by Difficulty)
 
-| Category | Project Title | Description | Link |
-|:---:|:---:|:---|:---:|
-| Getting Started | Introduction to Arduino | First steps with LED and basic pin control. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Introduction%20to%20Arduino) |
-| Mini Experiments | Arduino Mini Projects | Small learning experiments with components and IO. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Mini%20Projects) |
-| LED & UI Control | Interactive LED Control | User-controlled LED behavior using button or serial input. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Interactive%20LED%20Control) |
-| Sensor Applications | Arduino Temperature Alert System | LM35 temperature monitoring with alert conditions. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Temperature%20Alert%20System) |
-| Timers & Displays | Countdown Timer | Seven-segment countdown timer system. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Countdown%20timer) |
-| Timers & Displays | Digital Alarm Timer System | Alarm clock and timer features with visual output. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Digital%20Alarm%20Timer%20System) |
-| Traffic Simulation | Traffic Light System | Traffic signal logic using LEDs. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Traffic%20Light) |
-|Photodiode Light Sensor System|signal amplification with Photodiode|Arduino + Photodiode + Op-Amp light sensor project|🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode)|
-|Automatic Door System|Automatic Door System|Automatic Door Opening and Closing System|🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System)|
+| Category | Project Title | Description | Difficulty | Link |
+|:---:|:---:|:---|:---:|:---:|
+| Getting Started | Introduction to Arduino | First steps with LED and basic pin control. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Introduction%20to%20Arduino) |
+| Mini Experiments | Arduino Mini Projects | Small learning experiments with components and IO. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Mini%20Projects) |
+| LED & UI Control | Interactive LED Control | User-controlled LED behavior using button or serial input. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Interactive%20LED%20Control) |
+| Traffic Simulation | Traffic Light System | Traffic signal logic using LEDs. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Traffic%20Light) |
+| Sensor Applications | Arduino Temperature Alert System | LM35 temperature monitoring with alert conditions. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Temperature%20Alert%20System) |
+| Timers & Displays | Countdown Timer | Seven-segment countdown timer system. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Countdown%20timer) |
+| Timers & Displays | Digital Alarm Timer System | Alarm clock and timer features with visual output. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Digital%20Alarm%20Timer%20System) |
+| Sensor Applications | Photodiode Light Sensor System | Arduino + Photodiode + Op-Amp light sensor project. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode) |
+| Automation | Automatic Door System | Automatic door opening and closing using sensors and servo. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System) |
+
+---
+
+🟢 **Beginner** → Suitable for newcomers learning Arduino basics  
+🟡 **Intermediate** → Includes multiple components or timing/display logic  
+🔴 **Advanced** → Requires understanding of sensors, servos, or analog circuits
 
 ---
 ## 🌳 Project Tree Overview
