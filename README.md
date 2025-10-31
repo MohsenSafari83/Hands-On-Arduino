@@ -38,6 +38,7 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 | Timers & Displays | Digital Alarm Timer System | Alarm clock and timer features with visual output. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Digital%20Alarm%20Timer%20System) |
 | Traffic Simulation | Traffic Light System | Traffic signal logic using LEDs. | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Traffic%20Light) |
 |Photodiode Light Sensor System|signal amplification with Photodiode|Arduino + Photodiode + Op-Amp light sensor project|🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode)|
+|Automatic Door System|Automatic Door System|Automatic Door Opening and Closing System|🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System)|
 
 ---
 ## 🌳 Project Tree Overview
@@ -50,6 +51,8 @@ projects
 ├── Arduino Temperature Alert System
 ├── Countdown Timer
 ├── Digital Alarm Timer System
+├── signal amplification with Photodiode
+├── Automatic Door System
 └── Traffic Light
 ```
 
