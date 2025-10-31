@@ -25,4 +25,9 @@
 9. [**Arduino Photodiode + Op-Amp Light Sensor**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode)
    
      Developed Arduino + Photodiode + Op-Amp light sensor project
+   
+10.[**signal amplification with Photodiode**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode)
+   In this project, we will be using the BPW34 Photodiode with an Op-Amp conditioning circuit and Arduino to build a light-intensity measurement system.
 
+11. [**Automatic Door System**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System)
+   Automatic Door Opening and Closing System
