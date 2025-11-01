@@ -51,7 +51,8 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 ```
 Hands-On-Arduino
 projects
-└── Introduction to Arduino
+
+├── Introduction to Arduino
 ├── Arduino Mini Projects
 ├── Interactive LED Control
 ├── Traffic Light
