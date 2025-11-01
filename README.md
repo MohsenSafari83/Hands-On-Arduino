@@ -54,12 +54,12 @@ projects
 └── Introduction to Arduino
 ├── Arduino Mini Projects
 ├── Interactive LED Control
+├── Traffic Light
 ├── Arduino Temperature Alert System
 ├── Countdown Timer
 ├── Digital Alarm Timer System
 ├── signal amplification with Photodiode
-├── Automatic Door System
-└── Traffic Light
+└── Automatic Door System
 ```
 
 ---
