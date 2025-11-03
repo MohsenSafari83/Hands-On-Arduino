@@ -74,7 +74,7 @@ This code sends the ASCII character `'A'` (**0x41**) every second using the NEC 
 
 Below is what the output of the Sender looks like in the Arduino Serial Monitor:
 
-![output of sender](images/senderout.)
+![output of sender](images/senderout.png)
 
 ---
 
@@ -85,7 +85,7 @@ This code listens on **Pin 2**, decodes incoming NEC signals, and extracts the c
 
 Below is what the output of the Reciver looks like in the Arduino Serial Monitor:
 
-![output of reciver ](images/reciverout.)
+![output of reciver ](images/reciverout.png)
 
 ## IR Components Reference
 
