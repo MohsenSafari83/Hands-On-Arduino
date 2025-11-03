@@ -62,12 +62,35 @@ The **VS838** module needs no external components—just proper power and signal
 - **OUT (left pin)** → **Digital Pin 2**
 
 ---
+#  What is the NEC Protocol?
 
-##  Arduino Code
+**NEC** (short for **Nippon Electric Corporation**) is one of the most widely used and standardized **Infrared (IR) communication protocols**.  
+It’s commonly found in **TV**, **DVD**, and **set-top box** remote controls due to its simplicity, reliability, and noise immunity.
+
+---
+
+##  Key Features of the NEC Protocol
+
+| Feature | Description | Importance in Our Code |
+|----------|--------------|------------------------|
+| **Data Frame** | 32-bit data frame. | `IrSender.sendNEC(..., 32)` handles full 32-bit transmission. |
+| **Carrier Frequency** | **38 kHz** modulation frequency. | Prevents interference from ambient light — the **VS838** receiver only detects 38 kHz signals. |
+| **Frame Structure** | `8-bit Address` + `8-bit Address Invert` + `8-bit Command` + `8-bit Command Invert`. | For simplicity, we use static or zeroed address fields. |
+| **Bit Order** | **LSB First** (Least Significant Bit sent first). | Automatically handled by `sendNEC()`. |
 
 ### 1. Sender Code (`Sender.ino`)
 
 This code sends the ASCII character `'A'` (**0x41**) every second using the NEC protocol with address **0x00**.
+
+#### Sender Code Analysis
+
+| Line / Statement | Function |
+|------------------|-----------|
+| `#include <IRremote.h>` | Includes the IRremote library which generates the 38 kHz signal and handles NEC timing. |
+| `#define IR_SEND_PIN 3` | Sets **pin 3** (PWM-capable) for the IR333 transmitter. |
+| `IrSender.begin(IR_SEND_PIN, ...)` | Initializes the IR sender and configures background PWM generation at 38 kHz. |
+| `unsigned long dataToSend = 'A';` | The data to be transmitted — character `'A'` (ASCII 65 or `0x41`). |
+| `IrSender.sendNEC(0x00, dataToSend, 32);` | The core transmission function that encodes and sends the 32-bit NEC frame. |
 
 
 #### Output of Sender
@@ -78,9 +101,24 @@ Below is what the output of the Sender looks like in the Arduino Serial Monitor:
 
 ---
 
-### 2. Receiver Code (`Receiver.ino`)
+### Receiver Code Analysis (`Receiver.ino`)
 
-This code listens on **Pin 2**, decodes incoming NEC signals, and extracts the command byte (our character).
+The receiver demodulates the IR signal from the **VS838** and reconstructs the original 32-bit NEC data frame.
+
+### Working Principle
+
+1. **Signal Detection:**  
+   The **VS838** continuously monitors incoming light. When a 38 kHz signal is detected, it converts it to a clean digital signal.
+
+2. **Decoding Process:**  
+   The function `IrReceiver.decode()` measures the timing of pulses — identifying the **9 ms + 4.5 ms** leader, and then interpreting each bit (based on pulse length) as **0** or **1**.
+
+3. **Reconstruction:**  
+   The decoded 32-bit frame is stored inside the `IrReceiver.decodedIRData` structure.
+```cpp
+uint16_t command = IrReceiver.decodedIRData.command;
+char receivedChar = (char)command;
+```
 #### Output of Reciver
 
 Below is what the output of the Reciver looks like in the Arduino Serial Monitor:
@@ -95,4 +133,14 @@ Below is what the output of the Reciver looks like in the Arduino Serial Monitor
 | **IR Receiver (VS838)** | ![VS838](images/vs838.png) | 38 kHz IR receiver module used to decode NEC signals. | [VS838 Datasheet (Vishay)](https://www.vishay.com/docs/82491/tsop382.pdf) |
 
 
+##  Summary
+
+The **NEC protocol** enables reliable IR communication by using:
+
+- **38 kHz carrier modulation** — filters out ambient light interference.  
+- **32-bit structured data frames** — includes address, command, and their inverted copies for error checking.  
+- **Precise pulse timing** — ensures accurate bit interpretation.  
+- **IRremote library** — automatically handles encoding, decoding, and timing for NEC signals.
+
+Together, these allow the Arduino **Sender** and **Receiver** to transmit and decode characters (like `'A'`) accurately, forming a simple yet robust **infrared serial communication link**.
 
