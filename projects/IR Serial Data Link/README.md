@@ -1,5 +1,5 @@
 #   Serial Communication Link Circuit
-![Project Overview](images/Project-Overview.png)
+![Project Overview](images/Project-Overview.jpg)
 
 # Arduino Infrared (IR) Serial Link
 
@@ -86,5 +86,13 @@ This code listens on **Pin 2**, decodes incoming NEC signals, and extracts the c
 Below is what the output of the Reciver looks like in the Arduino Serial Monitor:
 
 ![output of reciver ](images/reciverout.)
+
+## IR Components Reference
+
+| Component | Image | Description | Datasheet |
+|------------|--------|--------------|------------|
+| **IR LED (IR333)** | ![IR333](images/ir333.png) | High-efficiency 940 nm infrared LED used as the transmitter. | [IR333 Datasheet (Everlight)](https://www.everlight.com/file/ProductFile/IR333-A.pdf) |
+| **IR Receiver (VS838)** | ![VS838](images/vs838.png) | 38 kHz IR receiver module used to decode NEC signals. | [VS838 Datasheet (Vishay)](https://www.vishay.com/docs/82491/tsop382.pdf) |
+
 
 
