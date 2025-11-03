@@ -39,6 +39,7 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 | Timers & Displays | Digital Alarm Timer System | Alarm clock and timer features with visual output. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Digital%20Alarm%20Timer%20System) |
 | Sensor Applications | Photodiode Light Sensor System | Arduino + Photodiode + Op-Amp light sensor project. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode) |
 | Automation | Automatic Door System | Automatic door opening and closing using sensors and servo. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System) |
+| Wireless Communication | Arduino Infrared (IR) Serial Link | Simple wireless serial communication using IR333 and VS838 (38 kHz) based on the NEC protocol. |🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Infrared%20Serial%20Link) |
 
 ---
 
