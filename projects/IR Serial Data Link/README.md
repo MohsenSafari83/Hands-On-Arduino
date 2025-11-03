@@ -129,8 +129,8 @@ Below is what the output of the Reciver looks like in the Arduino Serial Monitor
 
 | Component | Image | Description | Datasheet |
 |------------|--------|--------------|------------|
-| **IR LED (IR333)** | ![IR333](images/ir333.png) | High-efficiency 940 nm infrared LED used as the transmitter. | [IR333 Datasheet (Everlight)](https://www.everlight.com/file/ProductFile/IR333-A.pdf) |
-| **IR Receiver (VS838)** | ![VS838](images/vs838.png) | 38 kHz IR receiver module used to decode NEC signals. | [VS838 Datasheet (Vishay)](https://www.vishay.com/docs/82491/tsop382.pdf) |
+| **IR LED (IR333)** | ![IR333](images/ir333.png) | High-efficiency 940 nm infrared LED used as the transmitter. | [IR333 Datasheet (Everlight)](https://docs.particle.io/assets/datasheets/makerkit/ir333-a.pdf) |
+| **IR Receiver (VS838)** | ![VS838](images/vs838.png) | 38 kHz IR receiver module used to decode NEC signals. | [VS838 Datasheet (Vishay)](https://www.sivago.com.cn/upload/pdf/2022/VS838(HK).pdf) |
 
 
 ##  Summary
