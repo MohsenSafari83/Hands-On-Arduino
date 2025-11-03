@@ -36,10 +36,11 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 | Traffic Simulation | Traffic Light System | Traffic signal logic using LEDs. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Traffic%20Light) |
 | Sensor Applications | Arduino Temperature Alert System | LM35 temperature monitoring with alert conditions. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Temperature%20Alert%20System) |
 | Timers & Displays | Countdown Timer | Seven-segment countdown timer system. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Countdown%20timer) |
+| Wireless Communication | Arduino Infrared (IR) Serial Link | Simple wireless serial communication using IR333 and VS838 (38 kHz) based on the NEC protocol. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/IR%20Serial%20Data%20Link) |
 | Timers & Displays | Digital Alarm Timer System | Alarm clock and timer features with visual output. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Digital%20Alarm%20Timer%20System) |
 | Sensor Applications | Photodiode Light Sensor System | Arduino + Photodiode + Op-Amp light sensor project. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode) |
 | Automation | Automatic Door System | Automatic door opening and closing using sensors and servo. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System) |
-| Wireless Communication | Arduino Infrared (IR) Serial Link | Simple wireless serial communication using IR333 and VS838 (38 kHz) based on the NEC protocol. |🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Infrared%20Serial%20Link) |
+
 
 ---
 
