@@ -18,7 +18,8 @@ This method contrasts with **Parallel Communication**, where multiple bits, or e
 These circuits (typically built from cascaded D-Flip-Flops) shift the data out (or in) one bit at a time with each clock pulse. This allows the internal parallel data of the microcontroller to be converted into the external serial format.
 
 > Here's an animation demonstrating how a shift register works:
-![Shift Register Animation](assets/shift_Register.gif)
+
+![Shift Register Animation](assets/Shift_Register.gif)
 
 ###  Serial vs. Parallel Communication
 
