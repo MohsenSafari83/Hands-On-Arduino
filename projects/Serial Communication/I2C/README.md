@@ -2,6 +2,37 @@
 
 This directory covers the **Inter-Integrated Circuit (I2C)** protocol, also known as **Two-Wire Interface (TWI)**, and its implementation in Arduino using the **Wire library**. I2C is a widely used serial communication standard in microcontrollers and embedded systems.
 
+## 🚌 What is a Bus?
+
+In computer engineering and electronics, a **Bus** is a set of shared communication lines used to transfer information (data, addresses, and control signals) between different components of a system. A bus essentially acts as a shared highway where all components connect to exchange information.
+
+---
+
+### 1. Parallel Buses
+
+Inside microcontrollers or larger computer systems, buses are often **parallel**:
+
+* **Structure:** Consists of numerous lines (e.g., 32 or 64 wires).
+* **Transfer:** Data is transferred **simultaneously** within one clock pulse.
+
+### 2. Bus in Serial Protocols
+
+In the context of serial protocols like I2C, the term "bus" refers to the shared connection point:
+
+* **I2C Bus:** Refers to the two shared wires (**SDA** and **SCL**) that connect multiple Masters and Slaves. Devices communicate by targeting one another using addressing.
+
+---
+
+### 🏷️ Main Components of a System Bus
+
+A system bus is typically composed of three types of lines:
+
+| Bus Type | Function | I2C Related Example |
+| :--- | :--- | :--- |
+| **Data Bus** | Transfers the actual data (the bytes). | The **SDA** (Serial Data) line. |
+| **Address Bus** | Specifies the exact location of the device or memory being accessed. | The **7-bit Slave Address** in I2C. |
+| **Control Bus** | Manages timing and data flow direction (Read/Write signals). | The **SCL** (Serial Clock) line for synchronization. |
+
 ## 💡 I2C Protocol Overview
 
 I2C allows communication between one or more **Masters** (typically microcontrollers) and multiple **Slaves** (sensors, modules, etc.). A **Master** initiates communication and controls the **SCL** clock line, enabling control and monitoring between devices.
