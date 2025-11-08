@@ -17,7 +17,14 @@ I2C uses only two signal wires for communication between Masters and Slaves:
 
 > **📌 Note on Arduino UNO Pins:**
 > On the **Arduino UNO**, the **SDA** pin is **A4**, and the **SCL** pin is **A5**. For other boards, refer to their datasheets for I2C pin locations.
+---
+### Synchronization, Addressing, and Bus Structure
 
+| Concept | Explanation |
+| :--- | :--- |
+| **Addressing** | Every Slave must have a **unique 7-bit address** (sometimes 10-bit). The Master calls out this address to select the target Slave. Masters **do not** require an address. |
+| **Bus Structure** | Supports **Multi-Master / Multi-Slave** setups (up to $\approx 128$ Slaves). Only one Master can be active at a time. |
+| **Start/Stop Condition** | **Start:** Master changes **SDA from HIGH to LOW** while **SCL is HIGH** (initiates transaction). **Stop:** Master changes **SDA from LOW to HIGH** while **SCL is HIGH** (terminates transaction). |
 ---
 
 ## ⚙️ Key Specifications and Features
