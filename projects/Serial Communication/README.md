@@ -17,6 +17,9 @@ This method contrasts with **Parallel Communication**, where multiple bits, or e
 **Shift Registers** are the hardware core (the "working horse") in the implementation of most serial protocols. 
 These circuits (typically built from cascaded D-Flip-Flops) shift the data out (or in) one bit at a time with each clock pulse. This allows the internal parallel data of the microcontroller to be converted into the external serial format.
 
+> Here's an animation demonstrating how a shift register works:
+![Shift Register Animation](assets/shift_Register.gif)
+
 ###  Serial vs. Parallel Communication
 
 | Feature | Serial Communication | Parallel Communication |
@@ -27,6 +30,8 @@ These circuits (typically built from cascaded D-Flip-Flops) shift the data out (
 | **Wires Required** | Few wires (all data passes through the same line) | Multiple wires (each bit has a dedicated wire) |
 | **Applications** | Sensors, Modules, **Computer Small Peripherals** | Short-distance high-speed (e.g., older computer printers) |
 
+> Here is an animation that shows you how parallel data transfer is done: 
+![Serial vs Parallel Animation](assets/Parallel-Communication.gif)
 ---
 
 ##  2. Applications of Serial Communication Protocols
