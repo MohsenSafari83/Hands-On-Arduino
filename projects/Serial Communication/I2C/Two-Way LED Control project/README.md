@@ -72,3 +72,16 @@ The Slave listens for data from the Master and responds when data is requested.
 ## 4. Output Verification
 
 After uploading the respective programs to each Arduino, changing either potentiometer should immediately affect the LED on the *other* board, confirming successful bi-directional I2C communication.
+
+![sfl](images/Arduino-I2C.jpg)
+
+##  Resources and Further Reading
+
+This tutorial was created by compiling information from various technical guides and documentation.
+
+| Type             | Description                                                        | 
+|------------------|--------------------------------------------------------------------|
+| Technical Guide  | [Detailed I2C Tutorial & Examples for Arduino](https://deepbluembedded.com/arduino-i2c-tutorial-examples/)|
+| Simulation Tool  | [Tinkercad platform used for circuit design and visualization of I2C communication](https://www.tinkercad.com) |
+| Component Guide  | [General guides and tutorials for components used in the project (Potentiometers, LEDs, etc.)] (https://electropeak.com/learn/) |
+
