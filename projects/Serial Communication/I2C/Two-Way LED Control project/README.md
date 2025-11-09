@@ -83,5 +83,5 @@ This tutorial was created by compiling information from various technical guides
 |------------------|--------------------------------------------------------------------|
 | Technical Guide  | [Detailed I2C Tutorial & Examples for Arduino](https://deepbluembedded.com/arduino-i2c-tutorial-examples/)|
 | Simulation Tool  | [Tinkercad platform used for circuit design and visualization of I2C communication](https://www.tinkercad.com) |
-| Component Guide  | [General guides and tutorials for components used in the project (Potentiometers, LEDs, etc.)] (https://electropeak.com/learn/) |
+| Component Guide  | [General guides and tutorials for components used in the project (Potentiometers, LEDs, etc.)](https://electropeak.com/learn/) |
 
