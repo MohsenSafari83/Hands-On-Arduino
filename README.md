@@ -25,33 +25,30 @@ This repository contains a collection of structured mini-projects, covering:
 Each project includes code, documentation, images, and circuit diagrams to support learning and reproducibility.
 
 ---
-## Arduino Projects Portfolio Roadmap (Sorted by Difficulty)
+##  Arduino Projects Portfolio Roadmap (Sorted by Difficulty)
 
 | Category | Project Title | Description | Difficulty | Link |
-|:---|:---|:---|:---:|:---:|
-| Getting Started | Introduction to Arduino | First steps with LED and basic pin control | 🟢 | 🔗 [View](../Introduction%20to%20Arduino) |
-| Mini Experiments | Arduino Mini Projects | Small learning experiments with IO components | 🟢 | 🔗 [View](../Arduino%20Mini%20Projects) |
-| LED & UI Control | Interactive LED Control | User-controlled LED via button/serial | 🟢 | 🔗 [View](../Interactive%20LED%20Control) |
-| Traffic Simulation | Traffic Light System | LED-based traffic lights | 🟢 | 🔗 [View](../Traffic%20Light) |
-| Sensor Applications | Arduino Temperature Alert System | LM35 monitoring + alerts | 🟡 | 🔗 [View](../Arduino%20Temperature%20Alert%20System) |
-| Timers & Displays | Countdown Timer | Seven-segment countdown | 🟡 | 🔗 [View](../Countdown%20timer) |
-| Timers & Displays | Digital Alarm Timer System | Alarm clock & timer | 🟡 | 🔗 [View](../Digital%20Alarm%20Timer%20System) |
-| Wireless Communication | Arduino IR Serial Link | Infrared serial link using NEC protocol | 🟡 | 🔗 [View](../IR%20Serial%20Data%20Link) |
+|:---:|:---:|:---|:---:|:---:|
+| Getting Started | Introduction to Arduino | First steps with LED and basic pin control. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Introduction%20to%20Arduino) |
+| Mini Experiments | Arduino Mini Projects | Small learning experiments with components and IO. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Mini%20Projects) |
+| LED & UI Control | Interactive LED Control | User-controlled LED behavior via button/serial. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Interactive%20LED%20Control) |
+| Traffic Simulation | Traffic Light System | Traffic signal logic using LEDs. | 🟢 Beginner | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Traffic%20Light) |
 
-| Serial Communication | **I2C** |  |  |  |
-| &nbsp;&nbsp;↳ Protocol Theory | I2C Communication Protocol | Arduino I2C + Wire library | 🟡 | 🔗 [View](../Serial%20Communication/I2C/I2C%20Communication%20Protocol%20Theory) |
-| &nbsp;&nbsp;↳ Mini Project | Two-Way LED Control (I2C) | Bidirectional LED using I2C | 🟡 | 🔗 [View](../Serial%20Communication/I2C/Two-Way%20LED%20Control%20project) |
+| Sensor Applications | Arduino Temperature Alert System | LM35 temperature monitoring with alert conditions. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Arduino%20Temperature%20Alert%20System) |
+| Timers & Displays | Countdown Timer | Seven-segment countdown timer system. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Countdown%20timer) |
+| Timers & Displays | Digital Alarm Timer System | Alarm clock & timer features with LEDs. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Digital%20Alarm%20Timer%20System) |
 
-| Serial Communication | **UART** |  |  |  |
-| &nbsp;&nbsp;↳ Protocol Theory | UART Protocol | UART basics + debugging | 🟡 | 🔗 [View](../Serial%20Communication/UART/UART%20Communication%20Protocol%20Theory) |
-| &nbsp;&nbsp;↳ Mini Project | UART Mini Project | Serial terminal messaging | 🟡 | 🔗 Coming Soon |
+| Wireless Communication | Arduino Infrared (IR) Serial Link | Infrared serial data using IR333 + VS838 modules. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/IR%20Serial%20Data%20Link) |
 
-| Serial Communication | **SPI** |  |  |  |
-| &nbsp;&nbsp;↳ Protocol Theory | SPI Protocol | SPI basics & Arduino usage | 🟡 | 🔗 [View](../Serial%20Communication/SPI/SPI%20Communication%20Protocol%20Theory) |
-| &nbsp;&nbsp;↳ Mini Project | SPI Mini Project | Basic SPI communication | 🟡 | 🔗 Coming Soon |
+| Serial Communication | I2C Communication Protocol Theory | Documentation for Arduino I2C + Wire Library. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C) |
+| Serial Communication | Two-Way LED Control Project (I2C) | Mini project for practicing I2C communication. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C/Two-Way%20LED%20Control%20project) |
+| Serial Communication | UART Communication Protocol Theory | UART communication concepts and Arduino usage. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/UART/UART%20Communication%20Protocol%20Theory) |
+| Serial Communication | UART Mini Project | Serial messaging / debugging experiments. | 🟡 Intermediate | 🔗 *(Coming soon)* |
+| Serial Communication | SPI Communication Protocol Theory | SPI overview + Arduino usage. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/SPI/SPI%20Communication%20Protocol%20Theory) |
+| Serial Communication | SPI Mini Project | Basic SPI communication demonstration. | 🟡 Intermediate | 🔗 *(Coming soon)* |
 
-| Sensor Applications | Photodiode Light Sensor System | Photodiode + Op-Amp analog gain | 🔴 | 🔗 [View](../signal%20amplification%20with%20Photodiode) |
-| Automation | Automatic Door System | Sensor-based automatic door | 🔴 | 🔗 [View](../Automatic%20Door%20System) |
+| Sensor Applications | Photodiode Light Sensor System | Photodiode + Op-Amp signal amplification. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode) |
+| Automation | Automatic Door System | Smart door using proximity sensors + servo. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System) |
 
 
 
