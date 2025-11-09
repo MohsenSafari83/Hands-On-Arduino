@@ -61,7 +61,7 @@ projects
 ├── Arduino Temperature Alert System
 ├── Countdown Timer
 ├── Digital Alarm Timer System
-├──Arduino Infrared (IR) Serial Link
+├── Arduino Infrared (IR) Serial Link
 ├── signal amplification with Photodiode
 └── Automatic Door System
 ```
