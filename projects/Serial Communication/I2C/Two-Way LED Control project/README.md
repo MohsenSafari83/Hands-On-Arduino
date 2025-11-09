@@ -22,7 +22,7 @@ The two Arduinos communicate via the I2C bus.
 | Component | Arduino Master | Arduino Slave |
 | :--- | :--- | :--- |
 | **I2C Bus** | **A4 (SDA)** and **A5 (SCL)** | **A4 (SDA)** and **A5 (SCL)** |
-| **Input** | Potentiometer connected to **Analog Pin (A0)** | Potentiometer connected to **Analog Pin (A0)** |
+| **Input** | Potentiometer connected to **Analog Pin (A1)** | Potentiometer connected to **Analog Pin (A0)** |
 | **Output** | LED connected to **PWM Pin** (e.g., Pin 5) | LED connected to **PWM Pin** (e.g., Pin 6) |
 | **Connection** | SDA Master $\leftrightarrow$ SDA Slave; SCL Master $\leftrightarrow$ SCL Slave; **GND Master $\leftrightarrow$ GND Slave** |
 
