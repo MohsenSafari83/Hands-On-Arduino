@@ -25,8 +25,7 @@ This repository contains a collection of structured mini-projects, covering:
 Each project includes code, documentation, images, and circuit diagrams to support learning and reproducibility.
 
 ---
-
-##  Arduino Projects Portfolio Roadmap (Sorted by Difficulty)
+## Arduino Projects Portfolio Roadmap (Sorted by Difficulty)
 
 | Category | Project Title | Description | Difficulty | Link |
 |:---|:---|:---|:---:|:---:|
@@ -39,23 +38,21 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 | Timers & Displays | Digital Alarm Timer System | Alarm clock & timer | 🟡 | 🔗 [View](../Digital%20Alarm%20Timer%20System) |
 | Wireless Communication | Arduino IR Serial Link | Infrared serial link using NEC protocol | 🟡 | 🔗 [View](../IR%20Serial%20Data%20Link) |
 
-<!-- ─────────────────────────────────────────────── -->
 | Serial Communication | **I2C** |  |  |  |
-| ↳ Protocol Theory | I2C Communication Protocol | Arduino I2C + Wire library | 🟡 | 🔗 [View](../Serial%20Communication/I2C/I2C%20Communication%20Protocol%20Theory) |
-| ↳ Mini Project | Two-Way LED Control (I2C) | Bidirectional LED control using I2C | 🟡 | 🔗 [View](../Serial%20Communication/I2C/Two-Way%20LED%20Control%20project) |
+| &nbsp;&nbsp;↳ Protocol Theory | I2C Communication Protocol | Arduino I2C + Wire library | 🟡 | 🔗 [View](../Serial%20Communication/I2C/I2C%20Communication%20Protocol%20Theory) |
+| &nbsp;&nbsp;↳ Mini Project | Two-Way LED Control (I2C) | Bidirectional LED using I2C | 🟡 | 🔗 [View](../Serial%20Communication/I2C/Two-Way%20LED%20Control%20project) |
 
 | Serial Communication | **UART** |  |  |  |
-| ↳ Protocol Theory | UART Protocol | UART basics + debugging | 🟡 | 🔗 [View](../Serial%20Communication/UART/UART%20Communication%20Protocol%20Theory) |
-| ↳ Mini Project | UART Mini Project | Serial terminal communication | 🟡 | 🔗 Coming Soon |
+| &nbsp;&nbsp;↳ Protocol Theory | UART Protocol | UART basics + debugging | 🟡 | 🔗 [View](../Serial%20Communication/UART/UART%20Communication%20Protocol%20Theory) |
+| &nbsp;&nbsp;↳ Mini Project | UART Mini Project | Serial terminal messaging | 🟡 | 🔗 Coming Soon |
 
 | Serial Communication | **SPI** |  |  |  |
-| ↳ Protocol Theory | SPI Protocol | SPI + Arduino wiring | 🟡 | 🔗 [View](../Serial%20Communication/SPI/SPI%20Communication%20Protocol%20Theory) |
-| ↳ Mini Project | SPI Mini Project | Basic SPI Example | 🟡 | 🔗 Coming Soon |
-
-<!-- ─────────────────────────────────────────────── -->
+| &nbsp;&nbsp;↳ Protocol Theory | SPI Protocol | SPI basics & Arduino usage | 🟡 | 🔗 [View](../Serial%20Communication/SPI/SPI%20Communication%20Protocol%20Theory) |
+| &nbsp;&nbsp;↳ Mini Project | SPI Mini Project | Basic SPI communication | 🟡 | 🔗 Coming Soon |
 
 | Sensor Applications | Photodiode Light Sensor System | Photodiode + Op-Amp analog gain | 🔴 | 🔗 [View](../signal%20amplification%20with%20Photodiode) |
 | Automation | Automatic Door System | Sensor-based automatic door | 🔴 | 🔗 [View](../Automatic%20Door%20System) |
+
 
 
 
