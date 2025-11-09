@@ -51,10 +51,12 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 | Serial Communication | **SPI** |  |  |  |
 | ↳ Protocol Theory | SPI Protocol | SPI + Arduino wiring | 🟡 | 🔗 [View](../Serial%20Communication/SPI/SPI%20Communication%20Protocol%20Theory) |
 | ↳ Mini Project | SPI Mini Project | Basic SPI Example | 🟡 | 🔗 Coming Soon |
+
 <!-- ─────────────────────────────────────────────── -->
 
 | Sensor Applications | Photodiode Light Sensor System | Photodiode + Op-Amp analog gain | 🔴 | 🔗 [View](../signal%20amplification%20with%20Photodiode) |
 | Automation | Automatic Door System | Sensor-based automatic door | 🔴 | 🔗 [View](../Automatic%20Door%20System) |
+
 
 
 
