@@ -29,3 +29,12 @@
 9. [**Automatic Door System**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System)
 
       Automatic Door Opening and Closing System
+10. [**Serial Communication**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication)
+
+    Arduino Serial Communication Tutorial
+    
+       - [**SPI**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/SPI)
+       - [**UART**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/UART)
+       - [**I2C**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C)
+            > [**I2C Bi-Directional Communication: Two-Way LED Control**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C/Two-Way%20LED%20Control%20project)
+      
