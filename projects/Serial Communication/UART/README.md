@@ -125,4 +125,12 @@ UART is ideal for simple, point-to-point data transmission.
 - Does not support multi-master or multi-slave (only point-to-point)
 - Both devices must be configured with the same Baud Rate
 
+## Further Reading Resources (UART Protocol)
+
+| Type               | Description                                                        |
+|--------------------|--------------------------------------------------------------------|
+| Technical Article  |[What is UART and how it works?](https://playwithcircuit.com/what-is-uart-and-how-it-works/ )           |
+| Technical Article  | [Basics of UART communication](https://www.circuitbasics.com/basics-uart-communication/)              |
+| Application Note   | [UART: A hardware communication protocol](https://www.analog.com/en/resources/analog-dialogue/articles/uart-a-hardware-communication-protocol.html) |
+
 
