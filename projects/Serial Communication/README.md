@@ -45,16 +45,26 @@ Serial communication is fundamental to any embedded system application. The main
 * **Debugging Interface:** Sending status and error messages from the microcontroller to an external monitor during runtime.
 
 ---
+# Arduino Serial Communication Ports Comparison
 
-##  3. Arduino Serial Communication Ports
+The following table compares the technical features and specifications of the three serial communication ports used in Arduino projects: **UART, I2C, and SPI**.
 
-The Arduino microcontroller (such as the ATmega328P on the Uno) supports three main types of serial communication protocols, which are explored in depth in the dedicated directories of this repository.
+| Feature | UART | I2C | SPI |
+|---|---|---|---|
+| **Name** | Universal Asynchronous Receiver/Transmitter | Inter-Integrated Circuit | Serial Peripheral Interface |
+| **Interface Diagram** | — | — | — |
+| **Pin Names** | TX, RX | SDA, SCL | MOSI, MISO, SCK, SS |
+| **Type of Communication** | Asynchronous | Synchronous | Synchronous |
+| **Clock** | No | Yes (master generates clock) | Yes (master generates clock) |
+| **Number of Masters** | Only 1 Master | Multi-Master Bus | Only 1 Master |
+| **Number of Slaves** | Only 1 Slave | Multi-Slave Bus | Multiple Slaves (Each requires 1 SS pin → limits number of slaves) |
+| **Data Rate** | Baud rates: 1200–115200 typical; up to 2 Mbps on advanced MCUs | 100 kbps (Standard) <br> 400 kbps (Fast) <br> 1 Mbps (Fast Plus) <br> 3.4 Mbps (High-Speed) <br> 5 Mbps (Ultra-Fast) | Fastest serial interface; up to ~50 Mbps on high-end MCUs |
+| **Distance** | Longest (several meters) | Short (bus architecture; limited) | Short (several cm) |
+| **Addressing** | Point-to-point, no addressing | 7-bit / 10-bit addressing | Each slave selected via dedicated SS pin |
+| **Advantages** | Simple and easy to use <br> Widely used <br> No clock needed <br> Long cable distance | Supports many devices <br> Multi-master support <br> Built-in error checking <br> Low power | Fastest speed <br> Multi-slave support <br> Easier than I2C |
+| **Disadvantages** | Only point-to-point <br> Limited devices <br> Minimal error detection <br> Slower than others | Limited distance <br> Slower than SPI <br> More complex | Requires more pins <br> More slaves → more I/O <br> Only 1 master <br> Short distance |
 
-| Protocol | Communication Type | Key I/O Pins (on Uno) | Speed | Primary Use Case |
-| :--- | :--- | :--- | :--- | :--- |
-| **UART** | Asynchronous (No Clock) | **0 (RX), 1 (TX)** | Medium | Communication with PC, Bluetooth, GPS |
-| **SPI** | Synchronous | **10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK)** | **Very High** | Communication with Displays, SD Cards |
-| **I2C (TWI)** | Synchronous (2-Wire Bus) | **A4 (SDA), A5 (SCL)** | Low to Medium | Connecting multiple sensors on one bus |
+
 
 For more details on each protocol and code examples, please refer to the respective directories:
 
