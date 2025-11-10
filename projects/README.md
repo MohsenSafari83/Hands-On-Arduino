@@ -36,5 +36,5 @@
        - [**SPI**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/SPI)
        - [**UART**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/UART)
        - [**I2C**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C)
-            > [**I2C Bi-Directional Communication: Two-Way LED Control**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C/Two-Way%20LED%20Control%20project)
+            - [**I2C Bi-Directional Communication: Two-Way LED Control**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C/Two-Way%20LED%20Control%20project)
       
