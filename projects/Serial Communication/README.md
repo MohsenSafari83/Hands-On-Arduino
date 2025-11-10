@@ -61,3 +61,21 @@ For more details on each protocol and code examples, please refer to the respect
 * [**`UART/`**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/UART)
 * [**`SPI/`**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/SPI)
 * [**`I2C/`**](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C)
+
+  ##  Resources for Further Reading
+
+- 🎥 **Serial Protocol Fundamentals (YouTube)**  
+  — [Watch here](https://www.youtube.com/watch?v=yz7h5xd18OE)
+
+-  **CircuitBasics – Electronics & Arduino Tutorials**  
+  — [Visit site](https://www.circuitbasics.com/)
+
+-  **DeepBlueEmbedded – Embedded Systems Tutorials**  
+  — [Visit site](https://deepbluembedded.com/)
+
+- **UART Tutorial (YouTube)**  
+  — [Watch here](https://www.youtube.com/watch?v=b5kndEtAKl8)
+
+-  **Serial Communication Overview – UART, SPI, I2C (YouTube)**  
+  — [Watch here](https://www.youtube.com/watch?v=IyGwvGzrqp8&pp=ygUTc2VyaWFsIGNvbXVuaWNhdGlvbg%3D%3D)
+
