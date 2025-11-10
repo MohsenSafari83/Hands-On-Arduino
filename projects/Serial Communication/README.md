@@ -64,18 +64,13 @@ For more details on each protocol and code examples, please refer to the respect
 
   ##  Resources for Further Reading
 
-- 🎥 **Serial Protocol Fundamentals (YouTube)**  
-  — [Watch here](https://www.youtube.com/watch?v=yz7h5xd18OE)
+- [**Serial Protocol Fundamentals (YouTube)**](https://www.youtube.com/watch?v=yz7h5xd18OE)
 
--  **CircuitBasics – Electronics & Arduino Tutorials**  
-  — [Visit site](https://www.circuitbasics.com/)
+-  [**CircuitBasics – Electronics & Arduino Tutorials**](https://www.circuitbasics.com/)
 
--  **DeepBlueEmbedded – Embedded Systems Tutorials**  
-  — [Visit site](https://deepbluembedded.com/)
+-  [**DeepBlueEmbedded – Embedded Systems Tutorials**](https://deepbluembedded.com/)
 
-- **UART Tutorial (YouTube)**  
-  — [Watch here](https://www.youtube.com/watch?v=b5kndEtAKl8)
+- [**UART Tutorial (YouTube)**](https://www.youtube.com/watch?v=b5kndEtAKl8)
 
--  **Serial Communication Overview – UART, SPI, I2C (YouTube)**  
-  — [Watch here](https://www.youtube.com/watch?v=IyGwvGzrqp8&pp=ygUTc2VyaWFsIGNvbXVuaWNhdGlvbg%3D%3D)
+-  [**Serial Communication Overview – UART, SPI, I2C (YouTube)**](https://www.youtube.com/watch?v=IyGwvGzrqp8&pp=ygUTc2VyaWFsIGNvbXVuaWNhdGlvbg%3D%3D)
 
