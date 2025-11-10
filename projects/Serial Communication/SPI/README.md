@@ -114,4 +114,16 @@ Two common multi-Slave configurations:
 ❌ **No ACK/error checking**  
 ❌ **Only one Master**  
 
+## Resources and Further Reading (SPI Protocol)
+
+This section provides references to technical guides, tutorials, and videos for deeper understanding and practical implementation of the SPI protocol.
+
+| Type | Description | Link |
+| :--- | :--- | :--- |
+| **Technical Guide** | Basics of the SPI Communication Protocol, covering core functions and concepts. | https://www.circuitbasics.com/basics-of-the-spi-communication-protocol/ |
+| **Practical Tutorial** | Comprehensive step-by-step guide on the Serial Peripheral Interface (SPI). | https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all |
+| **Video Tutorial** | Tutorial explaining how SPI works and clarifying MOSI/MISO concepts. | https://www.youtube.com/watch?v=IyGwvGzrqp8 |
+| **Video Tutorial** | Detailed explanation of SPI wiring and implementation on microcontrollers. | https://www.youtube.com/watch?v=MCi7dCBhVpQ |
+
+
 
