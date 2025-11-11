@@ -132,5 +132,5 @@ UART is ideal for simple, point-to-point data transmission.
 | Technical Article  |[What is UART and how it works?](https://playwithcircuit.com/what-is-uart-and-how-it-works/ )           |
 | Technical Article  | [Basics of UART communication](https://www.circuitbasics.com/basics-uart-communication/)              |
 | Application Note   | [UART: A hardware communication protocol](https://www.analog.com/en/resources/analog-dialogue/articles/uart-a-hardware-communication-protocol.html) |
-
+|Technical Article |[Arduino UART Serial Communication](https://deepbluembedded.com/uart-pic-microcontroller-tutorial/)|
 
