@@ -39,10 +39,8 @@ Each project includes code, documentation, images, and circuit diagrams to suppo
 | Wireless Communication | Arduino Infrared (IR) Serial Link | Infrared serial data using IR333 + VS838 modules. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/IR%20Serial%20Data%20Link) |
 | Serial Communication | I2C Communication Protocol Theory | Documentation for Arduino I2C + Wire Library. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C) |
 | Serial Communication | Two-Way LED Control Project (I2C) | Mini project for practicing I2C communication. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/I2C/Two-Way%20LED%20Control%20project) |
-| Serial Communication | UART Communication Protocol Theory | UART communication concepts and Arduino usage. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/UART/UART%20Communication%20Protocol%20Theory) |
-| Serial Communication | UART Mini Project | Serial messaging / debugging experiments. | 🟡 Intermediate | 🔗 *(Coming soon)* |
-| Serial Communication | SPI Communication Protocol Theory | SPI overview + Arduino usage. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/SPI/SPI%20Communication%20Protocol%20Theory) |
-| Serial Communication | SPI Mini Project | Basic SPI communication demonstration. | 🟡 Intermediate | 🔗 *(Coming soon)* |
+| Serial Communication | UART Communication Protocol Theory | UART communication concepts and Arduino usage. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/UART) |
+| Serial Communication | SPI Communication Protocol Theory | SPI overview + Arduino usage. | 🟡 Intermediate | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Serial%20Communication/SPI) |
 | Sensor Applications | Photodiode Light Sensor System | Photodiode + Op-Amp signal amplification. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/signal%20amplification%20with%20Photodiode) |
 | Automation | Automatic Door System | Smart door using proximity sensors + servo. | 🔴 Advanced | 🔗 [View](https://github.com/MohsenSafari83/Hands-On-Arduino/tree/main/projects/Automatic%20Door%20System) |
 
@@ -74,10 +72,10 @@ Hands-On-Arduino projects
 |      └── Two-Way LED Control project
 │   ├── UART
 |      ├── UART Communication Protocol Theory
-|      └── 
+|    
 │   └── SPI
 |      ├── SPI Communication Protocol Theory
-|      └──
+|      
 └── Automatic Door System
 ```
 
