@@ -3,6 +3,51 @@
 
 Welcome to **Introduction to Arduino** — a beginner-friendly overview of the Arduino platform.  
 This guide will help you understand what Arduino is, how it works, and why it’s one of the best tools to start learning **electronics and programming**.
+---
+# Table of Contents
+
+- [Introduction to Arduino](#introduction-to-arduino)
+  - [What Is Arduino?](#what-is-arduino)
+  - [Anatomy of an Arduino Board](#anatomy-of-an-arduino-board)
+  - [Basic Operation](#basic-operation)
+  - [Circuit Basics](#circuit-basics)
+    - [Breadboard Overview](#breadboard-overview)
+  - [Electronic Signals](#electronic-signals)
+    - [Analog Signal](#analog-signal)
+    - [Digital Signal](#digital-signal)
+  - [Sensors & Actuators](#sensors--actuators)
+    - [What Is a Sensor?](#what-is-a-sensor)
+    - [Actuators](#actuators)
+    - [Input & Output](#input--output)
+    - [Serial Communication Protocols](#serial-communication-protocols)
+  - [Arduino API](#arduino-api)
+    - [Main Parts](#main-parts)
+    - [Program Structure](#program-structure)
+    - [The "Sketch"](#the-sketch)
+  - [Quick Reference](#quick-reference)
+    - [General](#general)
+      - [`setup()`](#setup)
+      - [`loop()`](#loop)
+      - [`delay()`](#delay)
+      - [`millis()`](#millis)
+    - [Functions](#functions)
+      - [Void Function Example](#void-function-example-does-not-return-a-value)
+      - [Function Returning a Value](#function-returning-a-value-type-int-example)
+    - [Variable Definition](#variable-definition)
+      - [Global Variable](#global-variable)
+      - [Local Variable](#local-variable)
+    - [Data Types](#data-types)
+    - [Serial Communication](#serial-communication)
+      - [`Serial.begin(baudRate)`](#serialbeginbaudrate)
+      - [`Serial.print()` / `Serial.println()`](#serialprint--serialprintln)
+      - [`Serial.read()`](#serialread)
+    - [GPIO / Pin Management](#gpio--pin-management)
+      - [`pinMode()`](#pinmode)
+      - [`digitalRead()`](#digitalread)
+      - [`digitalWrite()`](#digitalwrite)
+      - [`analogRead()`](#analogread)
+      - [`analogWrite()` (PWM)](#analogwrite-pwm)
+  - [Resources and References](#resources-and-references)
 
 ---
 
